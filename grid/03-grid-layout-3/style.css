@@ -89,3 +89,54 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+/* solução */
+ul {
+  list-style-type: none;
+}
+.container{
+  display:grid;
+  grid-template-columns:1fr 4fr;
+  gap:5px;
+}
+
+/* header*/
+.header{
+  grid-column: 1/3;
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.logo{
+  justify-self: start;
+}
+.menu ul{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* sidebar */
+.sidebar{
+  display:grid;
+  grid-row:2/4;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap:50px;
+}
+
+/* nav */
+.nav ul{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* aticles */
+.article{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  gap:15px;
+}
+
+/* footer */
+.footer{
+  grid-column:1/3;
+}
